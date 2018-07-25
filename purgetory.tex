@@ -1,0 +1,23 @@
+
+The workflow is illustrated in Figure \ref{fig:flow}.
+
+
+\begin{figure}
+\begin{tikzpicture}
+\node[b] (database) {Database (SQL)};
+\node[c, below of=database] (prop) {Assembly properties \\ (mass, discharge time, composition)};
+\node[b, below of=prop] (pyne) {PyNE};
+\node[c, below of=pyne] (decay) {Decayed assemblies \\ (mass, composition)};
+\node[b, below of=decay] (pyne2) {PyNE};
+\node[c, below of=pyne2] (metrics) {Metrics (decay heat, activity), Isotopics};
+
+\path[l] (database) -- (prop);
+\path[l] (prop) -- (pyne);
+\path[l] (pyne) -- (decay);
+\path[l] (decay) -- (pyne2);
+\path[l] (pyne2) -- (metrics);
+
+\end{tikzpicture}
+\caption{Workflow of importing and processing data for this paper.}
+\label{fig:flow}
+\end{figure}
