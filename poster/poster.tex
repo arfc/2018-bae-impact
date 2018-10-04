@@ -167,9 +167,6 @@ in the U.S ($\sim244,896$) and their properties
 While high resolution of this kind is exceptionally valuable, the volume of data can 
 present challenges for processing and simulation computation times.
 
-We compare the predicted U.S. \gls{UNF} inventory in 2020 calculated using
-\gls{UNF-STANDARDS} to the same prediction calculated using a simplified \gls{UNF} 
-inventory assuming an average burnup and enrichment in order to assess the impact of this common simplifying assumption on fuel cycle metric accuracy.
 
 \end{block}
 
@@ -195,7 +192,7 @@ inventory assuming an average burnup and enrichment in order to assess the impac
 
 \gls{UNF} is typically either destined for disposal (after storage) or reprocessing.
 Accordingly, the U.S. \gls{UNF} inventory can be analyzed in two different
-ways, with certain metrics important for each.
+ways, with certain metrics important for each:
 
 \begin{table}[h]
     \centering
@@ -205,8 +202,8 @@ ways, with certain metrics important for each.
         \hline
         Fuel cycle analysis & Equivalent Pu-239 \cite{anon_plutonium_1989} & t \\
         \hline
-        \multirow{2}{*}{Waste management} & \shortstack{Decay heat \\ (@ 2020, 2100, 3100)} & MW\\
-        & \shortstack{Activity \\ (@ 2020, 2100, 3100)} & Bq \\
+        \multirow{2}{*}{Waste management} & Decay heat & MW\\
+        & Activity & Bq \\
         \hline
     \end{tabular}
     \caption{Important metrics for \gls{UNF} with regard to analysis types }
@@ -299,7 +296,7 @@ to 2020.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{../images/iso_rel.png}
+    \includegraphics[width=0.6\textwidth]{../images/iso_rel.png}
     \caption{Relative error between high resolution and simplified case for different isotopes.}
     \label{fig:iso_rel}
 \end{figure}
@@ -307,7 +304,7 @@ to 2020.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{../images/pu_rel.png}
+    \includegraphics[width=0.6\textwidth]{../images/pu_rel.png}
     \caption{Relative error between high resolution and simplified case for plutonium isotopes.}
     \label{fig:pu_rel}
 \end{figure}
@@ -321,13 +318,20 @@ are evaluated in time.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{../images/ha_err.png}
+    \includegraphics[width=0.7\textwidth]{../images/ha_err.png}
     \caption{Relative error of activity and decay heat of the
             \gls{UNF} inventory over time.}
     \label{fig:wm_err}
 \end{figure}
 
 
+\end{block}
+
+
+\begin{block}{References}
+
+        {\footnotesize\bibliographystyle{abbrv} 
+        \bibliography{poster}}
 \end{block}
 
 \end{column} % End of the first column
@@ -421,9 +425,13 @@ Simplified inventory is \textbf{acceptable approximation} for fuel cycle analysi
 The work done was funded through the Nuclear Engineering Science
 Laboratory Synthesis (NESLS) program. We thank Kaushik Banerjee
 from Oak Ridge National Laboratory for providing the data used
-in this paper. 
+in this paper.
+This research is being performed using funding received from the DOE Office
+of Nuclear Energy's Nuclear Energy University Program
+(Project 16-10512) 'Demand-Driven Cycamore Archetypes'.
 
 \end{block}
+
 
 %----------------------------------------------------------------------------------------
 %   CONTACT INFORMATION
@@ -434,17 +442,6 @@ in this paper.
 
 
 
-\begin{alertblock}{Contact Information}
-\setbeamercolor{block title}{fg=norange,bg=white} % Change the block title color
-\begin{itemize}
-    
-    \item Web: \href{arfc.github.io}{arfc.github.io}
-    \item Email: \href{mailto:jbae11@illinois.edu}{jbae11@illinois.edu}
-    \item Phone: +1 (217) 377-5784
-\end{itemize}
-
-\end{alertblock}
-
 %----------------------------------------------------------------------------------------
 
 \end{column} % End of column 2
@@ -454,11 +451,6 @@ in this paper.
 \begin{column}{\onecolwid} % The third column
 
 
-\begin{block}{References}
-
-        {\footnotesize\bibliographystyle{abbrv} 
-        \bibliography{poster}}
-\end{block}
 
 
 %----------------------------------------------------------------------------------------
